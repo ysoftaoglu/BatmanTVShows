@@ -1,0 +1,51 @@
+$header-bg: #349aed
+$header-gradient: linear-gradient(145deg, #349aed 50%, #34d8ed 100%)
+$header-gap: 20px 15px
+  
+  
+.header
+  background-color: $header-bg
+  background-image: $header-gradient
+  
+  &__inner
+    max-width: 1170px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: $header-gap
+
+  &__logo
+    a
+      line-height: 0
+      display: block
+    img
+      width: 48px
+
+  &__nav
+    display: flex
+
+    &-item
+      color: #fff
+      position: relative
+
+      &::after,
+      &--active::after
+        position: absolute
+        content: ""
+        bottom: 0
+        left: 0
+        height: 2px
+        width: 0
+        background-color: #e5f7fd
+        transition: all .3s ease
+
+      &--active::after
+        width: 100%
+
+      &:hover
+        &::after
+          width: 100%
+      
+      &:not(:last-child)
+        margin-right: 30px

@@ -1,0 +1,62 @@
+$detail-gap: 30px 15px
+  
+.detail
+
+  &__inner
+    max-width: 1170px
+    margin: 0 auto
+    padding: $detail-gap
+
+  &__img
+    border-radius: 5px
+
+  &__title
+    margin-bottom: 5px
+    margin-top: 10px
+
+  &__info
+    margin-top: 0
+    margin-bottom: 0
+    color: #6c757d
+
+    &-separator
+      margin-left: 5px
+      margin-right: 5px
+
+  &__summary
+    margin-top: 10px
+    margin-bottom: 10px
+
+  &__btn
+    display: inline-block
+    padding: 10px 15px
+    border-radius: 3px
+
+    &:not(:last-child)
+      margin-right: 20px
+
+    &--blue
+      background-color: #34a6ed
+      color: #fff
+
+    &--gray
+      color: #212529
+      background-color: #edeff1
+
+    &--green
+      color: #fff
+      background-color: #37be3d
+
+@media (min-width: 992px)
+  .detail
+    &__inner
+      display: flex
+      margin-top: 30px
+
+    &__title
+      margin-top: 0
+
+    &__body
+      margin-left: 30px
+      
+

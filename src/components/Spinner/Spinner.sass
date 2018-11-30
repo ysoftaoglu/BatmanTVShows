@@ -1,0 +1,41 @@
+.spinner
+  width: 100px
+  height: 100px
+  border-radius: 50%
+  background: #fff
+  background: linear-gradient(to right, #349aed 10%,#34d8ed 70%)
+  position: fixed
+  top: 50%
+  left: 50%
+  z-index: 999
+  animation: spinner-animation 1.4s infinite linear
+  transform: translate(-50%, -50%)
+
+  &::before
+    width: 50%
+    height: 50%
+    background: #fff
+    border-radius: 100% 0 0 0
+    position: absolute
+    top: 0
+    left: 0
+    content: ''
+
+  &::after
+    background: #fff
+    width: 75%
+    height: 75%
+    border-radius: 50%
+    content: ''
+    margin: auto
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+
+@keyframes spinner-animation
+  0%
+    transform: translate(-50%, -50%) rotate(0deg)
+  100%
+    transform: translate(-50%, -50%) rotate(360deg)

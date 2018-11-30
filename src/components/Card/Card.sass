@@ -1,0 +1,52 @@
+.card
+  margin-right: 30px
+  margin-bottom: 10px
+  flex-basis: calc((100% - 120px) / 5)
+  flex-grow: 0
+  flex-shrink: 1
+
+  &__img
+    img
+      width: 100%
+      border-radius: 5px
+      display: block
+      margin-bottom: 10px
+
+  &__title
+    color: #0073d1
+
+  &__info
+    margin-top: 0
+    color: #6c757d
+    font-size: 13px
+
+    &-separator
+      margin-left: 5px
+      margin-right: 5px
+
+@media (min-width: 1187px)
+  .card
+    &:nth-child(5n)
+      margin-right: 0
+
+@media (min-width: 953px) and (max-width: 1186px)
+  .card
+    flex-basis: calc((100% - 90px) / 4)
+    &:nth-child(4n)
+      margin-right: 0
+
+@media (min-width: 719px) and (max-width: 952px)
+  .card
+    flex-basis: calc((100% - 60px) / 3)
+    &:nth-child(3n)
+      margin-right: 0
+
+@media (min-width: 485px) and (max-width: 718px)
+  .card
+    flex-basis: calc((100% - 30px) / 2)
+    &:nth-child(2n)
+      margin-right: 0
+
+@media (max-width: 484px)
+  .card
+    flex-basis: 100%
