@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet';
 // Styles
 import './NotFound.sass'
 
-// Search Icon
+// Sad Icon
 import SadIcon from '../../assets/img/sad.png';
 
 const NotFound = () => (
